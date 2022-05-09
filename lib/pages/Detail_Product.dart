@@ -1,5 +1,6 @@
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
+import 'package:mirai_app/pages/AR.dart';
 import 'package:mirai_app/shared/theme.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:mirai_app/model/product.dart';
@@ -71,7 +72,9 @@ class DetailProduct extends StatelessWidget {
                       ),
                       ElevatedButton(
                         child: Text("COBA AR"),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/AR');
+                        },
                         style: ElevatedButton.styleFrom(
                           primary: Colors.pink,
                         ),

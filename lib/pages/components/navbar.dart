@@ -19,7 +19,7 @@ class BottomNavigation extends StatelessWidget {
         case 1:
           return Explore();
         case 2:
-          return ARfilter();
+          return MyProjectAR();
         default:
           return Home();
       }
