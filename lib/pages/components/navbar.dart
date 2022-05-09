@@ -16,9 +16,9 @@ class BottomNavigation extends StatelessWidget {
       switch (currentIndex) {
         case 0:
           return Home();
+        // case 1:
+        //   return Explore();
         case 1:
-          return Explore();
-        case 2:
           return ARfilter();
         default:
           return Home();
@@ -38,8 +38,8 @@ class BottomNavigation extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               CustomNavbarItems(index: 0, imageUrl: 'assets/ic_home.png'),
-              CustomNavbarItems(index: 1, imageUrl: 'assets/ic_explore.png'),
-              CustomNavbarItems(index: 2, imageUrl: 'assets/ic_ar.png'),
+              // CustomNavbarItems(index: 1, imageUrl: 'assets/ic_explore.png'),
+              CustomNavbarItems(index: 1, imageUrl: 'assets/ic_ar.png'),
             ],
           ),
         ),
