@@ -71,7 +71,9 @@ class DetailProduct extends StatelessWidget {
                       ),
                       ElevatedButton(
                         child: Text("COBA AR"),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/ar');
+                        },
                         style: ElevatedButton.styleFrom(
                           primary: Colors.pink,
                         ),
@@ -84,7 +86,6 @@ class DetailProduct extends StatelessWidget {
                         const EdgeInsets.only(left: 24, right: 24, top: 10),
                     child: Text(
                       item['name'],
-                      textAlign: TextAlign.left,
                     )),
               ],
             ),

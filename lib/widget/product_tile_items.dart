@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:mirai_app/model/product.dart';
 import 'package:mirai_app/shared/theme.dart';
@@ -20,7 +22,8 @@ class ProductTileItems extends StatelessWidget {
                 scrollDirection: Axis.vertical,
                 shrinkWrap: true,
                 itemBuilder: (context, index) {
-                  final DocumentSnapshot item = streamSnapshot.data!.docs[index];
+                  final DocumentSnapshot item =
+                      streamSnapshot.data!.docs[index];
                   return InkWell(
                     onTap: () {
                       Navigator.pushNamed(context, '/detail');
